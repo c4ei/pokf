@@ -163,7 +163,7 @@
                     <div>
                         <p :style="{ 'font-size': fontSize }">1：建议尽量使用当今的主流浏览器如Chorme, Safari, Firefox等。</p>
                         <p :style="{ 'font-size': fontSize }">2：建议尽量使用大屏幕手机以防止画面出现元素重叠，溢出边界等问题。</p>
-                        <p :style="{ 'font-size': fontSize }">3：遇到系统性问题时，可先尝试刷新网页。刷新后如果问题仍没有得到解决，请参考下面回答或联系作者。</p>
+                        <p :style="{ 'font-size': fontSize }">3：遇到系统性问题时，可先尝试刷新网页。刷新后如果问题仍没有得到解决，请参考下面回答或연락하기。</p>
                     </div>
                 </el-collapse-item>
                 <el-collapse-item name="1">
@@ -181,10 +181,10 @@
                 </el-collapse-item>
                 <el-collapse-item name="2">
                     <template slot="title">
-                        <i class="el-icon-question"></i><span :style="{ 'font-size': fontSize }">Q：登录网页时不想播放音乐？</span>
+                        <i class="el-icon-question"></i><span :style="{ 'font-size': fontSize }">Q：로그인网页时不想播放音乐？</span>
                     </template>
                     <div>
-                        <p :style="{ 'font-size': fontSize }">点击登录页面右上角的播放键即可关闭音乐的自动播放。</p>
+                        <p :style="{ 'font-size': fontSize }">点击로그인页面右上角的播放键即可关闭音乐的自动播放。</p>
                     </div>
                 </el-collapse-item>
                 <el-collapse-item name="3">
@@ -250,10 +250,10 @@
             </el-collapse>
         </el-tab-pane>
 
-        <el-tab-pane label="联系作者" name="contact" lazy>
+        <el-tab-pane label="연락하기" name="contact" lazy>
             <i class="el-icon-info"></i><span :style="{ 'font-size': fontSize }">作者建议</span>
-            <p :style="{ 'font-size': fontSize }">如果您遇到问题或Bug，请尽快联系作者解决。同时也欢迎各种技术交流切磋，或针对本网站提出的建设性意见和建议。</p>
-            <p :style="{ 'font-size': fontSize }">联系作者时请表明来意，如果是报告问题或Bug请同时提供相应的截图、移动端机型和浏览器类型，谢谢。</p>
+            <p :style="{ 'font-size': fontSize }">如果您遇到问题或Bug，请尽快연락하기解决。同时也欢迎各种技术交流切磋，或针对本网站提出的建设性意见和建议。</p>
+            <p :style="{ 'font-size': fontSize }">연락하기时请表明来意，如果是报告问题或Bug请同时提供相应的截图、移动端机型和浏览器类型，谢谢。</p>
             <h1 :style="{ 'font-size': fontSize }"><i class="el-icon-chat-dot-round"></i>社交媒体</h1>
             <hr class="divider-line">
             <el-row :gutter="20">
@@ -280,18 +280,19 @@
             </el-row>
             <h1 :style="{ 'font-size': fontSize }"><i class="el-icon-chat-dot-round"></i>发送邮件</h1>
             <hr class="divider-line">
-            <span :style="{ 'font-size': fontSize }">请发送邮件至</span><i class="el-icon-s-promotion"></i>
-            <el-link type="info" href="mailto:shurintou@gmail.com?subject = Hello">shurintou@gmail.com</el-link>
+            <span :style="{ 'font-size': fontSize }">email
+</span><i class="el-icon-s-promotion"></i>
+            <el-link type="info" href="mailto:c4ei.net@gmail.com?subject = Hello">c4ei.net@gmail.com</el-link>
             <h1 :style="{ 'font-size': fontSize }"><i class="el-icon-chat-dot-round"></i>Github</h1>
             <hr class="divider-line">
             <p :style="{ 'font-size': fontSize }">如果您拥有Github账号，您也可以在上面向作者提出issue。</p>
             <span :style="{ 'font-size': fontSize }">前端项目：</span><el-link type="success"
-                href="https://github.com/shurintou/journey-to-the-west"
-                target="_blank">https://github.com/shurintou/journey-to-the-west</el-link>
+                href="https://github.com/c4ei.net/journey-to-the-west"
+                target="_blank">https://github.com/c4ei.net/journey-to-the-west</el-link>
             <br>
             <span :style="{ 'font-size': fontSize }">后端项目：</span><el-link type="warning"
-                href="https://github.com/shurintou/server-of-jttw"
-                target="_blank">https://github.com/shurintou/server-of-jttw</el-link>
+                href="https://github.com/c4ei.net/server-of-poker"
+                target="_blank">https://github.com/c4ei.net/server-of-poker</el-link>
             <p :style="{ 'font-size': fontSize }">如果您觉得本网页体验不错，您还可以在Github上给该项目点星<i class="el-icon-star-off"></i>以支持我们，谢谢。
             </p>
         </el-tab-pane>

@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<span slot="footer">
-			<el-button @click="closeAddAiPlayerDialog" style="margin-right:10%">取消</el-button>
+			<el-button @click="closeAddAiPlayerDialog" style="margin-right:10%">취소</el-button>
 			<el-button type="primary" @click="submitNewAIPlayer" :disabled="temAIPlayerIndex === -1">添加</el-button>
 		</span>
     </el-dialog>

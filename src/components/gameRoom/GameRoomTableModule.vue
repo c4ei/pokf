@@ -7,7 +7,7 @@
 			">
 			<el-alert style="margin-top: 3vh; padding: 0px" :style="{ 'font-size': fontSize }" class="clickable" :title="playerLocRoom.name +
 			(playerLocRoom.owner === player.id ? ' [修改]' : '[查看]')
-			" :description="playerLocRoom.needPassword ? ' 密码： ' + playerLocRoom.password : ''
+			" :description="playerLocRoom.needPassword ? ' 비밀번호： ' + playerLocRoom.password : ''
 		" type="info" center :closable="false"></el-alert>
 		</div>
 		<el-tooltip v-for="n in playerLocRoom.cardNum" :key="n" effect="light"
@@ -147,7 +147,7 @@
 			" id="game-room-table-vertical-room-info-top">
 			<el-alert :style="{ 'font-size': fontSize }" class="clickable" :title="playerLocRoom.name +
 			(playerLocRoom.owner === player.id ? ' [修改]' : '[查看]')
-			" :description="playerLocRoom.needPassword ? ' 密码： ' + playerLocRoom.password : ''
+			" :description="playerLocRoom.needPassword ? ' 비밀번호： ' + playerLocRoom.password : ''
 		" type="info" center :closable="false"></el-alert>
 		</div>
 		<div id="game-room-table-vertical-room-info-middle">

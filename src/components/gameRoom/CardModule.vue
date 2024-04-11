@@ -22,13 +22,13 @@
                 :disabled="timer === null || getGamePlayer.online === false || metamorphoseMode">不出</el-button>
             <el-button :type="getGamePlayer.online === false ? 'info' : 'warning'" style="float:left; margin-left:2%"
                 :size="buttonSize" :style="{ 'font-size': fontSize, 'padding': paddingSize }" :disabled="timer !== null"
-                @click="shiftOnline">{{ getGamePlayer.online === false ? '取消' : '托管' }}</el-button>
+                @click="shiftOnline">{{ getGamePlayer.online === false ? '취소' : '托管' }}</el-button>
             <el-button type="success" style="float:right; margin-right:2%" :size="buttonSize"
                 :style="{ 'font-size': fontSize, 'padding': paddingSize }" @click="playCard"
                 :disabled="timer === null || getGamePlayer.online === false">出牌</el-button>
             <el-button :type="metamorphoseMode ? 'info' : 'primary'" style="float:right; margin-right:2%" :size="buttonSize"
                 :style="{ 'font-size': fontSize, 'padding': paddingSize }" @click="shiftMetamorphoseMode"
-                :disabled="timer === null || getGamePlayer.online === false">{{ metamorphoseMode ? '取消' : '变身'
+                :disabled="timer === null || getGamePlayer.online === false">{{ metamorphoseMode ? '취소' : '变身'
                 }}</el-button>
         </div>
     </el-main>
@@ -170,7 +170,7 @@ export default cardList.extend({
                     this.$message.warning('请选择变身牌')
                     return
                 }
-                /* 已选择的牌则取消选择 */
+                /* 已选择的牌则취소选择 */
                 if (this.selectMetamorphoseCard.includes(n)) {
                     this.selectMetamorphoseCard = this.selectMetamorphoseCard.filter(card => card !== n)
                     return
@@ -192,7 +192,7 @@ export default cardList.extend({
                 this.selectCard.push(n)
             }
             else {
-                /* 已选择的牌则取消选择 */
+                /* 已选择的牌则취소选择 */
                 if (this.selectCard.includes(n)) {
                     this.selectCard = this.selectCard.filter(card => card !== n)
                     return
@@ -230,7 +230,7 @@ export default cardList.extend({
 
         playCardEmittedByRef: function () {
             if (this.getGamePlayer?.online === false) {
-                this.$message.warning('请先取消托管')
+                this.$message.warning('请先취소托管')
                 playSound('click')
                 return
             }

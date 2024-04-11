@@ -64,8 +64,8 @@ export type RoomPlayers = { [key in GamePlayerSeatIndex]: WebSocketPlayerInRoom 
  * @property {number} id - 房间id
  * @property {string} name -  房间名 
  * @property {0|1} status - 房间状态 0:等待开始, 1:游戏中
- * @property {boolean} needPassword - 是否需要密码
- * @property {string} password - 密码
+ * @property {boolean} needPassword - 是否需要비밀번호
+ * @property {string} password - 비밀번호
  * @property {number} cardNum - 使用牌的副数
  * @property {number} metamorphoseNum - 每副牌变身牌数量
  * @property {number} owner - 房主的玩家id

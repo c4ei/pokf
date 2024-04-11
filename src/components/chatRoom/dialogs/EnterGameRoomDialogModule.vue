@@ -1,15 +1,15 @@
 <template>
-    <el-dialog title="房间密码" :visible.sync="enterGameRoomDialogVisible" :width="dialogWidth" center :modal="false"
+    <el-dialog title="房间비밀번호" :visible.sync="enterGameRoomDialogVisible" :width="dialogWidth" center :modal="false"
         :close-on-click-modal="false" :before-close="closeEnterGameRoomDialog">
         <el-form :model="gameRoomValidateForm" ref="gameRoomValidateForm" @submit.native.prevent="enterGameRoom">
-            <el-form-item label="密码" prop="password" :rules="[{ trigger: 'blur', validator: checkPassword }]">
+            <el-form-item label="비밀번호" prop="password" :rules="[{ trigger: 'blur', validator: checkPassword }]">
                 <el-input placeholder="4到8位数字" v-model="gameRoomValidateForm.password" autocomplete="off" maxlength="8"
                     show-word-limit></el-input>
             </el-form-item>
         </el-form>
         <div slot="footer">
-            <el-button @click="closeEnterGameRoomDialog" style="margin-right:10%">取消</el-button>
-            <el-button type="success" @click="enterGameRoom">确定</el-button>
+            <el-button @click="closeEnterGameRoomDialog" style="margin-right:10%">취소</el-button>
+            <el-button type="success" @click="enterGameRoom">확인</el-button>
         </div>
     </el-dialog>
 </template>
@@ -23,12 +23,12 @@ import { ExecuteValidator, ExecuteValidate } from '@/type/validator'
 
 const checkPassword: ExecuteValidator = (rule, value, callback) => {
     if (value === '') {
-        callback(new Error('密码不能为空'));
+        callback(new Error('비밀번호不能为空'));
     }
     else {
         const uPattern = /^[0-9]{4,8}$/
         if (!uPattern.test(value)) {
-            callback(new Error('密码须4到8位数字'));
+            callback(new Error('비밀번호须4到8位数字'));
         }
         else {
             callback();

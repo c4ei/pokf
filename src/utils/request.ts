@@ -31,7 +31,7 @@ request.interceptors.response.use(
             return res
         }
         else if (res.code === 401) {
-            Message({ message: res.message ? res.message : '账号信息已过期，请重新登录', type: 'error' })
+            Message({ message: res.message ? res.message : '계정 정보가 만료되었습니다. 다시 시도해 주세요', type: 'error' })
             removeToken()
             if (location.href.indexOf('login') === -1) {
                 router.push({ name: 'Login' })

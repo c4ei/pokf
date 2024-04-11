@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<span slot="footer">
-			<el-button @click="avatarDialogVisible = false" style="margin-right:10%">取消</el-button>
+			<el-button @click="avatarDialogVisible = false" style="margin-right:10%">취소</el-button>
 			<el-button type="primary" @click="submitNewAvatar">修改</el-button>
 		</span>
 		</el-dialog>
@@ -47,7 +47,7 @@
 			</el-form-item>
 		</el-form>
 		<div slot="footer">
-			<el-button @click="cancelNicknameEdit" style="margin-right:10%">取消</el-button>
+			<el-button @click="cancelNicknameEdit" style="margin-right:10%">취소</el-button>
 			<el-button type="primary" @click.stop.prevent="submitNewNickname">修改</el-button>
 		</div>
 		</el-dialog>

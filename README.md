@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/Echarts-5.0-red)](https://echarts.apache.org/zh/index.html)
 
 
-西游记是一款网页联机式的纸牌类游戏，该项目是西游记的前端部分。后端部分请参考 [https://github.com/shurintou/server-of-jttw](https://github.com/shurintou/server-of-jttw)。
+西游记是一款网页联机式的纸牌类游戏，该项目是西游记的前端部分。后端部分请参考 [https://github.com/c4ei.net/server-of-poker](https://github.com/c4ei.net/server-of-poker)。
 
 ## 开发环境
 在开发环境下运行该项目请先安装[node.js](https://nodejs.org/en/)(建议版本>v14.15)。
@@ -27,7 +27,7 @@ npm run serve
 
 之后便可以在本地访问到前端项目了，建议使用`本地IP地址 + 端口`的路径访问，这样可以在局域网中实现联网。
 
-要开启后端项目，[请参考](https://github.com/shurintou/server-of-jttw#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)。
+要开启后端项目，[请参考](https://github.com/c4ei.net/server-of-poker#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)。
 
 ## 生产环境
 要在生产环境下部署该项目，首先请根据需求修改配置文件`.env.production`。
@@ -38,4 +38,4 @@ npm run build
 ```
 最后将打包好的`dist`文件夹整个拷贝到后端项目的根目录下，前端部分的部署完成。
 
-后端部分的部署 [请参考](https://github.com/shurintou/server-of-jttw#%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83)。
+后端部分的部署 [请参考](https://github.com/c4ei.net/server-of-poker#%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83)。

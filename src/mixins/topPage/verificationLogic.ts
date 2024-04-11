@@ -15,10 +15,10 @@ export const verificationLogic = Vue.extend({
             const self = this as Readonly<Record<never, any>> & Vue & _this
             if (value === '') {
                 self.vertificationCodeCorrect = false
-                callback(new Error('请输入验证码'))
+                callback(new Error('인증번호를 입력해주세요'))
             } else if (value !== self.identifyCode) {
                 self.vertificationCodeCorrect = false
-                callback(new Error('验证码不正确!'))
+                callback(new Error('잘못된 인증 코드!'))
             } else {
                 self.vertificationCodeCorrect = true
                 callback()
@@ -38,12 +38,12 @@ export const verificationLogic = Vue.extend({
         randomNum(min: number, max: number) {
             return Math.floor(Math.random() * (max - min) + min)
         },
-        // 切换验证码
+        // 切换확인 코드
         refreshCode() {
             this.identifyCode = ''
             this.createCode(4)
         },
-        // 生成四位随机验证码
+        // 生成四位随机확인 코드
         createCode(length: number) {
             for (let i = 0; i < length; i++) {
                 this.identifyCode += this.identifyCodeWords[this.randomNum(0, this.identifyCodeWords.length)]

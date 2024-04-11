@@ -9,7 +9,7 @@
                 <el-input placeholder="请输入房间名" type="text" v-model="gameRoomValidateForm.roomName" autocomplete="off"
                     maxlength="15" show-word-limit :disabled="notEditableFlag"></el-input>
             </el-form-item>
-            <el-form-item label="密码" prop="password" :rules="[{ trigger: 'blur', validator: checkPassword }]">
+            <el-form-item label="비밀번호" prop="password" :rules="[{ trigger: 'blur', validator: checkPassword }]">
                 <el-input placeholder="非必填，4到8位数字" v-model="gameRoomValidateForm.password" autocomplete="off" maxlength="8"
                     show-word-limit :disabled="notEditableFlag"></el-input>
             </el-form-item>
@@ -26,7 +26,7 @@
         </div>
         <div slot="footer">
             <template v-if="!notEditableFlag">
-                <el-button @click="closeEditGameRoomDialog" style="margin-right:10%">取消</el-button>
+                <el-button @click="closeEditGameRoomDialog" style="margin-right:10%">취소</el-button>
                 <el-button type="success" @click="editGameRoom">修改</el-button>
             </template>
             <template v-else>
@@ -49,7 +49,7 @@ const checkPassword: ExecuteValidator = (rule, value, callback) => {
     else {
         const uPattern = /^[0-9]{4,8}$/
         if (!uPattern.test(value)) {
-            callback(new Error('密码须4到8位数字'));
+            callback(new Error('비밀번호须4到8位数字'));
         }
         else {
             callback();

@@ -1,11 +1,11 @@
 <template>
-    <el-dialog title="提示" :visible.sync="leaveRoomDialogVisible" :width="dialogWidth" center
+    <el-dialog title="힌트" :visible.sync="leaveRoomDialogVisible" :width="dialogWidth" center
         :before-close="closeLeaveDialog">
         <i class="el-icon-question"></i>
-        <span style="text-align:center">确定要离开房间吗？</span>
+        <span style="text-align:center">확인要离开房间吗？</span>
         <span slot="footer">
-            <el-button @click="closeLeaveDialog" style="margin-right:10%">取消</el-button>
-            <el-button type="danger" @click="leaveRoom">确定</el-button>
+            <el-button @click="closeLeaveDialog" style="margin-right:10%">취소</el-button>
+            <el-button type="danger" @click="leaveRoom">확인</el-button>
         </span>
     </el-dialog>
 </template>

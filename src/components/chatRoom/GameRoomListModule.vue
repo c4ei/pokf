@@ -7,7 +7,7 @@
                 @click="enterGameRoom(gameRoom, -1)">
                 <span class="room-list-text" :style="{ 'font-size': largeFontSize }">{{ (gameRoom.name) + ' （' +
                     (gameRoom.status === 0 ? (isRoomFull(gameRoom.playerList) ? '已满员' : '可进入') : '游戏中') + '）' }}
-                    <el-tooltip effect="light" content="进入该房间需要密码" placement="right" v-if="gameRoom.needPassword">
+                    <el-tooltip effect="light" content="进入该房间需要비밀번호" placement="right" v-if="gameRoom.needPassword">
                         <i class="el-icon-lock"></i>
                     </el-tooltip>
                 </span>
